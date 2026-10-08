@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Tokens — paleta proposta para aplicação digital (inspirada na referência de marca).
+   Não é um manual oficial de marca.
+   ========================================================================== */
+:root {
+  /* Paleta base */
+  --color-carbon: #17191c;        /* Carbono: hero, contraste, rodapé */
+  --color-olive-deep: #2f2d20;    /* Oliva Profundo: superfícies escuras institucionais */
+  --color-olive-mid: #45412f;     /* Oliva Médio: detalhes em áreas escuras */
+  --color-gold: #c3a16a;          /* Ouro Assinatura: CTAs e detalhes */
+  --color-gold-deep: #7a582a;     /* Ouro Profundo: links e destaques sobre claro */
+  --color-ivory: #faf7f1;         /* Marfim: fundo principal */
+  --color-sand: #efe8db;          /* Areia: fundos alternados e cards */
+  --color-ink: #28251f;           /* Tinta: títulos sobre claro */
+  --color-muted: #655f54;         /* Texto secundário */
+  --color-line: #ddd1bc;          /* Linha Suave: divisores e bordas */
+
+  /* Tokens semânticos (redefinidos em superfícies escuras) */
+  --surface: var(--color-ivory);
+  --surface-alt: var(--color-sand);
+  --text: var(--color-ink);
+  --text-muted: var(--color-muted);
+  --accent: var(--color-gold);
+  --accent-text: var(--color-gold-deep);
+  --border: var(--color-line);
+  --focus: var(--color-gold-deep);
+  --card-surface: var(--color-ivory);
+
+  /* Botão primário */
+  --btn-primary-bg: var(--color-gold);
+  --btn-primary-bg-hover: #d1b27e;
+  --btn-primary-bg-active: #b59258;
+  --btn-primary-text: var(--color-carbon);
+
+  /* Tipografia */
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --text-h1: clamp(2.25rem, 1.45rem + 3.4vw, 4.25rem);   /* 36 → 68 px */
+  --text-h2: clamp(1.75rem, 1.3rem + 1.9vw, 2.75rem);     /* 28 → 44 px */
+  --text-h3: 1.3125rem;                                   /* 21 px */
+  --text-lead: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem); /* 17 → 19 px */
+  --text-body: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);    /* 16 → 18 px */
+  --text-button: 1rem;
+  --text-small: 0.875rem;
+  --text-eyebrow: 0.8125rem;
+
+  /* Espaçamento e formas */
+  --space-section: clamp(4rem, 2.5rem + 5vw, 7.5rem);
+  --space-block: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+  --container: 1200px;
+  --gutter: clamp(1.25rem, 4vw, 2rem);
+  --radius-card: 20px;
+  --radius-button: 14px;
+  --radius-photo: 24px;
+  --shadow-card: 0 18px 40px -24px rgba(40, 37, 31, 0.35);
+  --shadow-photo: 0 30px 60px -30px rgba(40, 37, 31, 0.45);
+  --header-height: 76px;
+  --cta-bar-height: 74px;
+
+  /* Movimento */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 220ms;
+}
+
+/* Superfícies escuras: os tokens semânticos mudam, os componentes seguem. */
+.surface-dark {
+  --surface: var(--color-carbon);
+  --surface-alt: var(--color-olive-deep);
+  --text: var(--color-ivory);
+  --text-muted: rgba(250, 247, 241, 0.76);
+  --accent-text: var(--color-gold);
+  --border: rgba(221, 209, 188, 0.55);
+  --focus: var(--color-gold);
+  --card-surface: rgba(250, 247, 241, 0.04);
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+.surface-dark--olive {
+  --surface: var(--color-olive-deep);
+  --surface-alt: var(--color-olive-mid);
+}

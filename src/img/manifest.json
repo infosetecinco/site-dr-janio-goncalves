@@ -1,0 +1,149 @@
+{
+  "retrato-principal": {
+    "width": 1066,
+    "height": 1600,
+    "sizes": [
+      {
+        "width": 560,
+        "height": 841,
+        "webp": "retrato-principal-560.webp",
+        "jpg": "retrato-principal-560.jpg",
+        "bytesWebp": 17580,
+        "bytesJpg": 35305
+      },
+      {
+        "width": 840,
+        "height": 1261,
+        "webp": "retrato-principal-840.webp",
+        "jpg": "retrato-principal-840.jpg",
+        "bytesWebp": 30522,
+        "bytesJpg": 64749
+      },
+      {
+        "width": 1066,
+        "height": 1600,
+        "webp": "retrato-principal-1066.webp",
+        "jpg": "retrato-principal-1066.jpg",
+        "bytesWebp": 42766,
+        "bytesJpg": 81353
+      }
+    ]
+  },
+  "retrato-principal-m": {
+    "width": 1066,
+    "height": 1332,
+    "sizes": [
+      {
+        "width": 480,
+        "height": 600,
+        "webp": "retrato-principal-m-480.webp",
+        "jpg": "retrato-principal-m-480.jpg",
+        "bytesWebp": 13660,
+        "bytesJpg": 25745
+      },
+      {
+        "width": 720,
+        "height": 900,
+        "webp": "retrato-principal-m-720.webp",
+        "jpg": "retrato-principal-m-720.jpg",
+        "bytesWebp": 23564,
+        "bytesJpg": 47441
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "webp": "retrato-principal-m-960.webp",
+        "jpg": "retrato-principal-m-960.jpg",
+        "bytesWebp": 34694,
+        "bytesJpg": 72702
+      }
+    ]
+  },
+  "retrato-sobre": {
+    "width": 1066,
+    "height": 1332,
+    "sizes": [
+      {
+        "width": 480,
+        "height": 600,
+        "webp": "retrato-sobre-480.webp",
+        "jpg": "retrato-sobre-480.jpg",
+        "bytesWebp": 12558,
+        "bytesJpg": 23231
+      },
+      {
+        "width": 720,
+        "height": 900,
+        "webp": "retrato-sobre-720.webp",
+        "jpg": "retrato-sobre-720.jpg",
+        "bytesWebp": 22244,
+        "bytesJpg": 43381
+      },
+      {
+        "width": 1066,
+        "height": 1332,
+        "webp": "retrato-sobre-1066.webp",
+        "jpg": "retrato-sobre-1066.jpg",
+        "bytesWebp": 38186,
+        "bytesJpg": 69837
+      }
+    ]
+  },
+  "retrato-alternativo": {
+    "width": 1066,
+    "height": 1332,
+    "sizes": [
+      {
+        "width": 480,
+        "height": 600,
+        "webp": "retrato-alternativo-480.webp",
+        "jpg": "retrato-alternativo-480.jpg",
+        "bytesWebp": 4714,
+        "bytesJpg": 11427
+      },
+      {
+        "width": 720,
+        "height": 900,
+        "webp": "retrato-alternativo-720.webp",
+        "jpg": "retrato-alternativo-720.jpg",
+        "bytesWebp": 8426,
+        "bytesJpg": 21306
+      }
+    ]
+  },
+  "fachada": {
+    "width": 900,
+    "height": 1200,
+    "sizes": [
+      {
+        "width": 480,
+        "height": 640,
+        "webp": "fachada-480.webp",
+        "jpg": "fachada-480.jpg",
+        "bytesWebp": 43590,
+        "bytesJpg": 63843
+      },
+      {
+        "width": 720,
+        "height": 960,
+        "webp": "fachada-720.webp",
+        "jpg": "fachada-720.jpg",
+        "bytesWebp": 80528,
+        "bytesJpg": 126246
+      },
+      {
+        "width": 900,
+        "height": 1200,
+        "webp": "fachada-900.webp",
+        "jpg": "fachada-900.jpg",
+        "bytesWebp": 111692,
+        "bytesJpg": 168846
+      }
+    ]
+  },
+  "og-retrato": {
+    "width": 1066,
+    "height": 1332,
+    "jpg": "og-retrato.jpg"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "site-dr-janio-goncalves",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Site institucional do Dr. Janio Gonçalves, cirurgião-dentista — prévia estática sem dependências.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "images": "python scripts/optimize-images.py --src originais --out src/img && python scripts/make-icons.py",
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "preview": "npm run build && npm run serve",
+    "check": "node --check scripts/build.mjs && node --check scripts/serve.mjs && node scripts/check-syntax.mjs",
+    "test": "node --test",
+    "verify": "npm run check && npm run test && npm run build"
+  }
+}
