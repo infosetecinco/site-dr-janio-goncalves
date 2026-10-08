@@ -13,6 +13,13 @@ const html = render();
 
 const attrValues = (source, attr) => [...source.matchAll(new RegExp(`${attr}="([^"]*)"`, 'g'))].map((m) => m[1]);
 
+test('share image resolves to an absolute HTTPS URL while preview remains noindex', () => {
+  const image = html.match(/property="og:image" content="([^"]+)"/)[1];
+  assert.match(image, /^https:\/\//);
+  assert.equal(new URL(image).pathname, '/site-dr-janio-goncalves/assets/img/og-retrato.jpg');
+  assert.match(html, /name="robots" content="noindex, nofollow"/);
+});
+
 test('renders a single h1 and the pt-BR language', () => {
   assert.equal((html.match(/<h1[\s>]/g) || []).length, 1);
   assert.ok(html.startsWith('<!doctype html>\n<html lang="pt-BR">'));
@@ -105,7 +112,8 @@ test('map is a placeholder until an exact embed URL exists, then loads on demand
 
 test('preview flag controls indexing and canonical/og url', () => {
   assert.ok(html.includes('<meta name="robots" content="noindex, nofollow">'));
-  assert.ok(!html.includes('rel="canonical"'));
+  const withoutUrl = render({ site: { ...baseConfig.site, url: '' } });
+  assert.ok(!withoutUrl.includes('rel="canonical"'));
   const published = render({ site: { ...baseConfig.site, isPreview: false, url: 'https://exemplo.com.br/' } });
   assert.ok(!published.includes('noindex'));
   assert.ok(published.includes('<link rel="canonical" href="https://exemplo.com.br">'));

@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "overflow": [],
+      "h1": "36px"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "overflow": [],
+      "h1": "36.46px"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "overflow": [],
+      "h1": "49.312px"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "overflow": [],
+      "h1": "58.016px"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "overflow": [],
+      "h1": "68px"
+    }
+  ],
+  "menuOpen": "true",
+  "menuReturnFocus": true,
+  "dialogTitleFocus": true,
+  "dialogReturnFocus": true,
+  "faqExpanded": "true",
+  "covered": [],
+  "errors": []
+}

@@ -15,8 +15,8 @@
 export const site = {
   /** true = prévia/homologação (adiciona noindex). Troque para false apenas na publicação aprovada. */
   isPreview: true,
-  /** Domínio definitivo (ex.: "https://www.exemplo.com.br"). Vazio até confirmação. */
-  url: '',
+  /** URL da prévia para metadados absolutos. Substituir pelo domínio definitivo quando aprovado. */
+  url: 'https://infosetecinco.github.io/site-dr-janio-goncalves',
   locale: 'pt-BR',
   title: 'Dr. Janio Gonçalves | Dentista em Primavera do Leste — MT',
   description:

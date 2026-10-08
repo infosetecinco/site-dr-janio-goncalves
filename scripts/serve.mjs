@@ -36,7 +36,14 @@ function safePath(urlPath) {
 }
 
 const server = createServer(async (request, response) => {
-  let target = safePath(request.url || '/');
+  let target;
+  try {
+    target = safePath(request.url || '/');
+  } catch {
+    response.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' });
+    response.end('URL inválida.');
+    return;
+  }
   if (!target) {
     response.writeHead(403);
     response.end('Forbidden');

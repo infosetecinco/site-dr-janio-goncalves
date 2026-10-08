@@ -7,6 +7,12 @@ dúvidas iniciais e consulta de horários para avaliação.
 > **Status: prévia para homologação.** O site carrega `noindex` e ainda depende das confirmações
 > listadas em [PENDENCIAS.md](PENDENCIAS.md). Não é o site oficial publicado.
 
+Prévia existente: https://infosetecinco.github.io/site-dr-janio-goncalves/
+Repositório: https://github.com/infosetecinco/site-dr-janio-goncalves
+
+Retomada da revisão em 08/10/2026: veja [REVISAO.md](REVISAO.md) para as correções
+locais e verificações atuais. A URL acima só incorpora mudanças após um deploy.
+
 ## Como executar e visualizar
 
 Requisitos: Node.js 20 ou superior. Sem dependências npm. Python 3 + Pillow só são necessários
@@ -61,7 +67,8 @@ PENDENCIAS.md          ← o que confirmar antes de publicar
 - Mapa: `address.mapEmbedUrl` com o ponto exato — o iframe passa a carregar sob demanda.
 - Avaliações: `reviews` (só renderiza com `confirmed: true`, origem e itens autorizados; entra no menu automaticamente).
 - Política de Privacidade: `footer.privacyPolicyUrl`.
-- Publicação: `site.url` (domínio definitivo) e `site.isPreview = false` (remove o `noindex`).
+- Publicação: trocar `site.url` (hoje aponta para a prévia) pelo domínio definitivo e,
+  somente após aprovação, definir `site.isPreview = false` (remove o `noindex`).
 
 **Fotos:** coloque os originais em `originais/` com os nomes esperados em `scripts/optimize-images.py`
 (ou ajuste o mapa `SOURCES` e as caixas de recorte em `VARIANTS`) e rode `npm run images`.
