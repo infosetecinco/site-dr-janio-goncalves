@@ -77,11 +77,10 @@ export const address = {
   lines: ['Rua Paranatinga, 220 — Primavera I', 'Primavera do Leste — MT', 'CEP 78850-000'],
   /** Endereço completo usado na busca do Google Maps. */
   full: 'Rua Paranatinga, 220, Primavera I, Primavera do Leste - MT, 78850-000',
-  /**
-   * URL de incorporação do Google Maps com o ponto EXATO confirmado pela clínica.
-   * Enquanto null, o site mostra apenas o link de busca pelo endereço (sem marcador aproximado).
-   */
-  mapEmbedUrl: null,
+  /** Local enviado por Daniel em 08/10/2026: Conceito Odontologia Integrada e estética. */
+  mapUrl: 'https://maps.app.goo.gl/3jDd7D25SXZAuRti8',
+  /** CID extraído do destino do link fornecido; carregamento apenas sob demanda. */
+  mapEmbedUrl: 'https://www.google.com/maps?cid=11485287687342787796&output=embed',
 };
 
 export const hours = [
@@ -408,7 +407,6 @@ export const publicationChecklist = [
   'Confirmar telefone/WhatsApp (DDD 62), endereço, CEP e horários com a clínica.',
   'Confirmar autorização de uso público das fotografias e da identidade visual enviadas.',
   'Receber o logo oficial (SVG/PNG transparente) e preencher brand.logo; atualizar o favicon.',
-  'Confirmar o ponto exato no Google Maps e preencher address.mapEmbedUrl.',
   'Aprovar todos os textos propostos (copy editorial) com o responsável.',
   'Decidir sobre avaliações: origem, autorização e data confirmadas antes de ativar reviews.confirmed.',
   'Preparar e revisar a Política de Privacidade antes de preencher footer.privacyPolicyUrl.',

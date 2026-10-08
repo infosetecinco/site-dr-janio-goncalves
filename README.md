@@ -64,7 +64,8 @@ PENDENCIAS.md          ← o que confirmar antes de publicar
 - FAQ: `faq.items`. Diferenciais: `differentials.items`. Etapas: `careSteps.steps`.
 - Inscrição profissional: `professional.registration` (só aparece quando preenchida).
 - Logo oficial: `brand.logo = { src, alt }` e substituir `src/static/favicon.svg` / `apple-touch-icon.png`.
-- Mapa: `address.mapEmbedUrl` com o ponto exato — o iframe passa a carregar sob demanda.
+- Mapa: `address.mapUrl` contém o link enviado; `address.mapEmbedUrl` incorpora o mesmo
+  estabelecimento pelo CID do Google Maps. O iframe carrega apenas após o clique.
 - Avaliações: `reviews` (só renderiza com `confirmed: true`, origem e itens autorizados; entra no menu automaticamente).
 - Política de Privacidade: `footer.privacyPolicyUrl`.
 - Publicação: trocar `site.url` (hoje aponta para a prévia) pelo domínio definitivo e,
@@ -88,7 +89,8 @@ Os recortes atuais preservam o rosto inteiro, o espaço acima da cabeça e o let
 - Menu mobile com `aria-expanded`/`aria-controls`, fecha ao escolher âncora e por Escape, devolve o foco.
 - CTA persistente: barra inferior no mobile (com espaço reservado no documento e `safe-area`) e
   botão discreto no desktop; nunca os dois ao mesmo tempo, e o CTA do cabeçalho some no mobile.
-- Mapa: sem coordenadas aproximadas. Até existir ponto exato, só o link de busca pelo endereço.
+- Mapa: link da Conceito fornecido por Daniel em 08/10/2026 e incorporação sob demanda
+  pelo identificador exato do estabelecimento. Sem link configurado, usa busca pelo endereço.
 - Avaliações: seção e item de menu condicionais; nada em elementos ocultos ou dados estruturados.
 - Dados estruturados mínimos (Person + local de atendimento como Dentist com endereço/telefone/horário),
   sem avaliações nem especialidades. Open Graph com recorte do retrato principal.

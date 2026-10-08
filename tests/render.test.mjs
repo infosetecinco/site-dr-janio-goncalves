@@ -102,12 +102,20 @@ test('optional professional data only renders when confirmed', () => {
 });
 
 test('map is a placeholder until an exact embed URL exists, then loads on demand', () => {
-  assert.ok(html.includes('map--placeholder'));
-  assert.ok(!html.includes('<iframe'));
-  assert.ok(html.includes('https://www.google.com/maps/search/?api=1&amp;query='));
+  const withoutMap = render({ address: { ...baseConfig.address, mapUrl: null, mapEmbedUrl: null } });
+  assert.ok(withoutMap.includes('map--placeholder'));
+  assert.ok(!withoutMap.includes('<iframe'));
+  assert.ok(withoutMap.includes('https://www.google.com/maps/search/?api=1&amp;query='));
   const withMap = render({ address: { ...baseConfig.address, mapEmbedUrl: 'https://www.google.com/maps/embed?pb=EXATO' } });
   assert.ok(withMap.includes('data-map-src="https://www.google.com/maps/embed?pb=EXATO"'));
   assert.ok(!withMap.includes('<iframe'), 'iframe must be injected only on demand');
+});
+
+test('location uses the supplied clinic link and offers its map on demand', () => {
+  assert.ok(html.includes('href="https://maps.app.goo.gl/3jDd7D25SXZAuRti8"'));
+  assert.ok(html.includes('data-map-load'));
+  assert.ok(!html.includes('map--placeholder'));
+  assert.ok(!html.includes('<iframe'), 'Map must only load after visitor interaction');
 });
 
 test('preview flag controls indexing and canonical/og url', () => {

@@ -23,7 +23,7 @@ export function buildLinks(config) {
     faq: buildWhatsAppLink(contact.whatsappNumber, messages.faq),
     treatment: (name) => buildWhatsAppLink(contact.whatsappNumber, treatmentMessage(messages.treatment, name)),
     tel: buildTelLink(contact.phoneE164),
-    maps: buildMapsSearchLink(address.full),
+    maps: address.mapUrl || buildMapsSearchLink(address.full),
   };
 }
 

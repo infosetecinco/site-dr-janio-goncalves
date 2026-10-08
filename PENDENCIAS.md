@@ -26,7 +26,7 @@ Onde alterar cada item: `src/site.config.mjs` (depois, `npm run build`).
 | # | Item | Situação na prévia | Onde ajustar |
 |---|------|--------------------|--------------|
 | 11 | Logo oficial (SVG/PNG transparente) | Assinatura tipográfica provisória no cabeçalho; favicon provisório "JG" | `brand.logo`; substituir `src/static/favicon.svg` e `apple-touch-icon.png` |
-| 12 | Ponto exato no Google Maps | Sem mapa incorporado; apenas link de busca pelo endereço completo | `address.mapEmbedUrl` (o mapa passa a carregar sob demanda) |
+| 12 | Ponto exato no Google Maps | Link da Conceito fornecido por Daniel em 08/10/2026; botão atualizado e mapa carregado sob demanda | `address.mapUrl`, `address.mapEmbedUrl` |
 | 13 | Avaliações de pacientes | Seção oculta e fora do menu | `reviews` (exige origem, autorização e data) |
 | 14 | Política de Privacidade | Link oculto no rodapé | `footer.privacyPolicyUrl` |
 | 15 | Imagem Open Graph 1200×630 com o logo oficial | Usa recorte 4:5 do retrato principal | `site.ogImage` + `scripts/optimize-images.py` |

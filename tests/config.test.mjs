@@ -108,7 +108,6 @@ test('public copy contains no forbidden promises or inherited references', () =>
 test('unconfirmed data stays empty instead of placeholders', () => {
   assert.equal(config.professional.registration, null);
   assert.equal(config.brand.logo, null);
-  assert.equal(config.address.mapEmbedUrl, null);
   assert.equal(config.footer.privacyPolicyUrl, null);
   assert.equal(config.site.isPreview, true);
   assert.ok(config.publicationChecklist.length >= 10);
