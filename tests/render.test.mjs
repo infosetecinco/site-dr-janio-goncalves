@@ -115,7 +115,7 @@ test('location uses the supplied clinic link and offers its map on demand', () =
   assert.ok(html.includes('href="https://maps.app.goo.gl/3jDd7D25SXZAuRti8"'));
   assert.ok(html.includes('data-map-load'));
   assert.ok(!html.includes('map--placeholder'));
-  assert.ok(!html.includes('<iframe'), 'Map must only load after visitor interaction');
+  assert.ok(!html.includes('<iframe'), 'Map is deferred until its section is visible');
 });
 
 test('preview flag controls indexing and canonical/og url', () => {

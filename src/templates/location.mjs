@@ -3,7 +3,7 @@ import { icons } from './icons.mjs';
 import { SectionHeading } from './section-heading.mjs';
 
 /**
- * Mapa: só é carregado sob demanda e apenas quando houver URL de incorporação
+ * Mapa: carregado ao entrar na área visível, apenas quando houver URL de incorporação
  * com o ponto exato confirmado. Sem isso, exibe um bloco informativo (sem marcador aproximado).
  */
 function MapBlock({ address, location, labels }) {

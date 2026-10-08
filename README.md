@@ -65,7 +65,8 @@ PENDENCIAS.md          ← o que confirmar antes de publicar
 - Inscrição profissional: `professional.registration` (só aparece quando preenchida).
 - Logo oficial: `brand.logo = { src, alt }` e substituir `src/static/favicon.svg` / `apple-touch-icon.png`.
 - Mapa: `address.mapUrl` contém o link enviado; `address.mapEmbedUrl` incorpora o mesmo
-  estabelecimento pelo CID do Google Maps. O iframe carrega apenas após o clique.
+  estabelecimento pelo CID do Google Maps. O iframe carrega automaticamente ao chegar
+  à área visível; o botão permanece como alternativa em navegadores sem IntersectionObserver.
 - Avaliações: `reviews` (só renderiza com `confirmed: true`, origem e itens autorizados; entra no menu automaticamente).
 - Política de Privacidade: `footer.privacyPolicyUrl`.
 - Publicação: trocar `site.url` (hoje aponta para a prévia) pelo domínio definitivo e,
