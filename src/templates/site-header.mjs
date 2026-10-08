@@ -8,7 +8,7 @@ function Brand({ brand, variant = 'header' }) {
   const inner = brand.logo
     ? html`<img class="brand__logo" src="${brand.logo.src}" alt="${brand.logo.alt || brand.name}" width="160" height="48">`
     : html`<span class="brand__name">${brand.name}</span><span class="brand__role">${brand.role}</span>`;
-  return html`<a class="brand brand--${variant}" href="#inicio" aria-label="${brand.name}, ${brand.role} — início">${inner}</a>`;
+  return html`<a class="brand brand--${variant}" href="#inicio">${inner}</a>`;
 }
 
 /**
